@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DDBFFD65-4B7B-49B7-9CF8-64B98700970B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AspNetMvc.Services</RootNamespace>
+    <AssemblyName>AspNetMvc.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=8.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.8.0.0\lib\net461\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Advs\Dtos\AdvertistmentPageViewModel.cs" />
+    <Compile Include="Advs\Dtos\AdvertistmentPositionViewModel.cs" />
+    <Compile Include="Advs\Dtos\AdvertistmentViewModel.cs" />
+    <Compile Include="AutoMapper\AutoMapperConfig.cs" />
+    <Compile Include="AutoMapper\DomainToViewModelMappingProfile.cs" />
+    <Compile Include="AutoMapper\ViewModelToDomainMappingProfile.cs" />
+    <Compile Include="Content\Contacts\ContactService.cs" />
+    <Compile Include="Content\Contacts\Dtos\ContactViewModel.cs" />
+    <Compile Include="Content\Contacts\IContactService.cs" />
+    <Compile Include="Content\Feedbacks\Dtos\FeedbackViewModel.cs" />
+    <Compile Include="Content\Feedbacks\FeedbackService.cs" />
+    <Compile Include="Content\Feedbacks\IFeedbackService.cs" />
+    <Compile Include="Content\Footers\Dtos\FooterViewModel.cs" />
+    <Compile Include="Content\Pages\Dtos\PageViewModel.cs" />
+    <Compile Include="Content\Pages\IPageService.cs" />
+    <Compile Include="Content\Pages\PageService.cs" />
+    <Compile Include="Content\PostCategories\Dtos\PostCategoryViewModel.cs" />
+    <Compile Include="Content\PostCategories\IPostCategoryService.cs" />
+    <Compile Include="Content\PostCategories\PostCategoryService.cs" />
+    <Compile Include="Content\Posts\Dtos\PostTagViewModel.cs" />
+    <Compile Include="Content\Posts\Dtos\PostViewModel.cs" />
+    <Compile Include="Content\Posts\IPostService.cs" />
+    <Compile Include="Content\Posts\PostService.cs" />
+    <Compile Include="Content\Slides\Dtos\SlideViewModel.cs" />
+    <Compile Include="Content\Slides\ISlideService.cs" />
+    <Compile Include="Content\Slides\SlideService.cs" />
+    <Compile Include="Content\Tags\TagViewModel.cs" />
+    <Compile Include="ECommerce\Bills\Dtos\BillDetailViewModel.cs" />
+    <Compile Include="ECommerce\Bills\Dtos\BillViewModel.cs" />
+    <Compile Include="ECommerce\ProductCategories\Dtos\ProductCategoryViewModel.cs" />
+    <Compile Include="ECommerce\ProductCategories\IProductCategoryService.cs" />
+    <Compile Include="ECommerce\ProductCategories\ProductCategoryService.cs" />
+    <Compile Include="ECommerce\Products\Dtos\ColorViewModel.cs" />
+    <Compile Include="ECommerce\Products\Dtos\ProductImageViewModel.cs" />
+    <Compile Include="ECommerce\Products\Dtos\ProductQuantityViewModel.cs" />
+    <Compile Include="ECommerce\Products\Dtos\ProductTagViewModel.cs" />
+    <Compile Include="ECommerce\Products\Dtos\ProductViewModel.cs" />
+    <Compile Include="ECommerce\Products\Dtos\ProductWishlistViewModel.cs" />
+    <Compile Include="ECommerce\Products\Dtos\SizeViewModel.cs" />
+    <Compile Include="ECommerce\Products\Dtos\WholePriceViewModel.cs" />
+    <Compile Include="IWebServiceBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\Announcements\Dtos\AnnouncementUserViewModel.cs" />
+    <Compile Include="System\Announcements\Dtos\AnnouncementViewModel.cs" />
+    <Compile Include="System\Commons\CommonService.cs" />
+    <Compile Include="System\Commons\ICommonService.cs" />
+    <Compile Include="System\Functions\Dtos\FunctionViewModel.cs" />
+    <Compile Include="System\Languages\Dtos\LanguageViewModel.cs" />
+    <Compile Include="System\Permissions\Dtos\PermissionViewModel.cs" />
+    <Compile Include="System\Roles\Dtos\AppRoleViewModel.cs" />
+    <Compile Include="System\Settings\Dtos\SystemConfigViewModel.cs" />
+    <Compile Include="System\Users\Dtos\AppUserViewModel.cs" />
+    <Compile Include="WebServiceBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AspNetMvc.Data.EF\AspNetMvc.Data.EF.csproj">
+      <Project>{ddb3793a-e112-4123-820c-b416cedc999c}</Project>
+      <Name>AspNetMvc.Data.EF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AspNetMvc.Data\AspNetMvc.Data.csproj">
+      <Project>{d7094bc8-a24d-49e8-bfde-24426617dae1}</Project>
+      <Name>AspNetMvc.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AspNetMvc.Infrastructure\AspNetMvc.Infrastructure.csproj">
+      <Project>{e1e32b3e-75f0-437a-bb64-e1070e32944d}</Project>
+      <Name>AspNetMvc.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AspNetMvc.Utilities\AspNetMvc.Utilities.csproj">
+      <Project>{51ae71c6-9e5e-4f0a-9a06-53597538f138}</Project>
+      <Name>AspNetMvc.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="System\AuditLogs\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

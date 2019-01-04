@@ -1,0 +1,74 @@
+﻿Location:
+	Living room - phòng khách
+	window - cửa sổ
+	kitchen - bếp
+	shower - nhà tắm
+Use
+	home - nhà
+	curtain
+	hotel - khách sạn
+	office - văn phòng
+	hospital - bệnh viện
+	cafe - quán cafe
+	Home textile - dệt may
+	Garment - may
+	camping - 
+	art & collectible - nghệ thuật & sưu tập
+	home decoration - trang trí nội thất
+Pattern
+	printed - in
+	Embroidered - thêu
+	Yarn Dyed - 
+	Plain dyed -
+	Pleated - 
+	Floral - 
+	Flocked - 
+	Horizontal - 
+	Beaded - 
+	Burnout - 
+	Dyed - 
+
+Style
+	Jacquard - 
+	Classic - 
+	Modern - 
+	European and American style - 
+	Plain - 
+	Stripe - 
+	American style -
+	bohemian - 
+	japan style -
+	traditional chinese - 
+	pastoral - 
+	new classical/post-modem - 
+	japanese and korean - 
+	southeast asia - 
+	folk art -
+	mediterranean - 
+	europe - 
+	korean -
+material
+	100% polyester -
+	100% cotton - 
+	velvet fabric - 
+	100% silk - 
+	mesh fabric - 
+	100% linen - 
+	cotton linen - 
+	lace fabric - 
+	cloth curtain - 
+	voile curtain - 
+	cloth curtain + voile curtain -
+	wood -
+	suede fabric - 
+	fabric - 
+	satin fabric - 
+	taffeta fabric -
+	100% acrylic -
+	100% polypropylene - 
+	organza fabric - 
+	damask fabric -
+technics
+	woven -
+	knitted -
+	nonwoven - 

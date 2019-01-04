@@ -1,0 +1,4 @@
+﻿PM> Install-Package Microsoft.AspNet.Identity.Owin 
+PM> Install-Package Microsoft.AspNet.Identity.EntityFramework
+PM> Install-Package Microsoft.Owin.Host.SystemWeb 
+
